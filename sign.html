@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sign Up</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: "Segoe UI", sans-serif;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: url("assets/login/background.jpg") no-repeat center
+          center/cover;
+      }
+
+      .signup-container {
+        display: flex;
+        width: 700px;
+        height: 450px;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+      }
+
+      .left-panel {
+        flex: 1;
+        background: url("assets/signup/image.jpg") no-repeat center center/cover;
+      }
+
+      .right-panel {
+        flex: 1;
+        background-color: #fff;
+        padding: 40px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .right-panel h1 {
+        font-size: 26px;
+        margin-bottom: 20px;
+      }
+
+      form label {
+        font-size: 13px;
+        margin-bottom: 5px;
+        display: block;
+      }
+
+      form input[type="text"],
+      form input[type="email"],
+      form input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        font-size: 14px;
+      }
+
+      form button[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background-color: #4b83f5;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        font-size: 14px;
+        cursor: pointer;
+        margin-bottom: 15px;
+      }
+
+      form button[type="submit"]:hover {
+        background-color: #366cd1;
+      }
+
+      .terms {
+        display: flex;
+        align-items: center;
+        font-size: 11px;
+        margin-bottom: 12px;
+      }
+
+      .terms input {
+        margin-right: 8px;
+      }
+
+      .terms a {
+        color: #4b83f5;
+        text-decoration: none;
+      }
+
+      .social-signup {
+        text-align: center;
+      }
+
+      .social-signup p {
+        font-size: 12px;
+        margin: 10px 0;
+      }
+
+      .social-signup button {
+        margin: 3px;
+        padding: 8px 12px;
+        border-radius: 6px;
+        border: 1px solid #ddd;
+        font-size: 12px;
+        cursor: pointer;
+      }
+
+      .login-link {
+        text-align: center;
+        font-size: 12px;
+        margin-top: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="signup-container">
+      <div class="left-panel"></div>
+      <div class="right-panel">
+        <h1>Sign Up</h1>
+        <form>
+          <label>Full name</label>
+          <input type="text" placeholder="Joey Willson" required />
+
+          <label>Email address</label>
+          <input type="email" placeholder="joeywillson@gmail.com" required />
+
+          <label>Set password</label>
+          <input type="password" placeholder="*********" required />
+
+          <div class="terms">
+            <input type="checkbox" required />
+            <span>
+              By creating an account, you agree to the
+              <a href="#">Terms</a> and <a href="#">Privacy</a>
+            </span>
+          </div>
+
+          <button type="submit">Create Account</button>
+
+          <p class="login-link">
+            Already have an account? <a href="login.html">Login</a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,303 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  background-color: #f4f4f4;
+}
+
+/*Navbar  */
+.navbar {
+  width: 95%;
+  min-height: 50px;
+  background-color: white;
+  padding: 0 2rem;
+  border-radius: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 10px;
+  z-index: 10;
+  margin-top: 0;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.navbar,
+.logo,
+nav ul {
+  display: flex;
+  align-items: center;
+}
+.navbar {
+  justify-content: space-between;
+}
+
+.login-btn {
+  margin-right: 30px;
+  border: none;
+  background-color: #4a84c6;
+  color: white !important;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.sign-btn{
+  border: none;
+  background-color: #4a84c6;
+  color: white !important;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.home-btn{
+  border: none;
+  background-color: white;
+}
+
+.home-btn:hover{
+  color: #3a6ca8;
+}
+.login-btn:hover {
+  background-color: #3a6ca8;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-family: "Pacifico", cursive;
+  font-size: 5rem;
+}
+
+.logo img {
+  margin-left: 30px;
+  height: 50px;
+  width: 50px;
+  object-fit: contain;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-left: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #0077ff;
+}
+
+.hero {
+  width: 100%;
+  height: 410px;
+  background: radial-gradient(circle at center, #d4f6ff 4%, #4a84c6 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  border-radius: 0 0 40px 40px;
+  overflow: hidden;
+}
+
+.girl {
+  height: 80%;
+  left: 45%;
+  max-height: 500px;
+  object-fit: contain;
+  z-index: 2;
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+}
+
+.speech {
+  position: absolute;
+  top: 19%;
+  left: 25%;
+  width: 300px;
+  max-width: 350px;
+  z-index: 1;
+}
+
+.tagline {
+  text-align: center;
+  font-size: 1.7rem;
+  margin: 2rem;
+  font-family: "Pacifico", cursive;
+}
+
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+  gap: 10px;
+  margin-top: 1.5rem;
+  padding: 0 1rem;
+}
+.filter-bar button {
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: 50px;
+  background-color: #4a84c6;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 1rem;
+}
+.filter-bar button:hover {
+  background-color: #2e5c91;
+}
+
+
+body {
+  background-color: #eef1f2;
+  font-family: "Ubuntu", sans-serif;
+  color: #6aa4e6;
+  margin: 0;
+  padding: 0;
+}
+
+.playwrite-desc {
+  font-family: "Playwrite PL", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.manhwa-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Card layout */
+.manhwa-card {
+  max-width: 500px;
+  flex: 1 1 320px;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  color: #6aa4e6;
+  border-radius: 40px;
+  padding: 25px;
+  width: 500px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Text side */
+.card-left {
+  flex: 1;
+  padding-right: 10px;
+}
+
+/* Image side */
+.card-right img {
+  width: 170px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.manhwa-card img {
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border: 2px solid rgba(0, 0, 0, 0.05);
+}
+
+.card-buttons {
+  position: relative; /* ADD THIS */
+}
+
+.hidden-tags {
+  display: none;
+}
+
+.icon-button {
+  margin-top: 10px;
+  margin-left: 25px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.6); 
+  backdrop-filter: blur(4px); 
+  border-radius: 50%;
+  padding: 6px;
+  cursor: url("/static/assets/cursor/pointer.png") 0 0, auto;
+  transition: background-color 0.3s;
+}
+
+.icon-button i {
+  font-size: 28px;
+  color: #6aa4e6;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.icon-button:hover i {
+  transform: scale(1.3);
+}
+
+/* Heart icon */
+.icon-button.heart i {
+  color: #6aa4e6;
+}
+.icon-button.heart:hover i {
+  color: red;
+}
+
+/* Plus icon */
+.icon-button.plus i {
+  color: #6aa4e6;
+}
+.icon-button.plus:hover i {
+  color: #003366;
+}
+
+.popup-menu {
+      width: 210px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 30px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      padding: 10px 15px;
+      position: absolute;
+      top: 40px;
+      right: 0;
+      z-index: 999;
+    }
+
+.popup-menu li {
+      list-style: none;
+      padding: 5px 10px;
+      cursor: pointer;
+      color: #333;
+    }
+
+    .popup-menu li:hover {
+      background-color: #f0f0f0;
+      color: #103a87;
+    }
+
+    .hidden {
+      display: none !important;
+    }
